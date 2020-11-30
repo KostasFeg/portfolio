@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2;
+  padding: 2;
+}
+
+.Home div {
+  color: #fff;
+  justify-content: center;
+}
+
+div h1 {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.typography {
+  /*
+  border: 5px solid red;
+  border-radius: 0.25rem;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#card {
+  display: flex;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 56rem) {
+  #card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  #card {
+    width: 33.3333%;
+  }
+}
+
+.card1 {
+}
+
+.card1:hover {
+  transform: scale(0.9, 0.9);
+}
+
+#card img {
+  max-width: 100%;
+  height: auto;
+}
