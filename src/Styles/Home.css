@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+/*     
+blue: #2196F3
+purple:#6035B2
+darker purple:#673AB7
+
+*/
+
 .Home {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +26,11 @@
 
 div h1 {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 50px;
+}
+
+div h1:hover {
+  text-decoration: underline #2196f3;
 }
 
 .typography {
@@ -49,9 +60,6 @@ div h1 {
   }
 }
 
-.card1 {
-}
-
 .card1:hover {
   transform: scale(0.9, 0.9);
 }
@@ -59,4 +67,130 @@ div h1 {
 #card img {
   max-width: 100%;
   height: auto;
+}
+
+.divider {
+  margin-top: 50px;
+  border-top: 3px solid #2196f3;
+}
+
+/*---------- Stack ----------- */
+
+.stack {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.stack h3 {
+  align-self: center;
+}
+
+.stack-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.04);
+
+  justify-content: space-evenly;
+}
+
+.stack h5 {
+  align-self: center;
+}
+
+.stack-icons img {
+  max-width: 6%;
+  height: auto;
+}
+
+.stack-icons img:hover {
+  animation: full-circle 1.1s ease-out;
+}
+
+@keyframes full-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.stack2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stack2 h4 {
+  align-self: center;
+}
+
+.stack2content {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.stack2card {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 35%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 50rem) {
+  .stack2card {
+    width: 51%;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .stack2card {
+    width: 60%;
+  }
+}
+
+.stack2cardcontent {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.card2img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  width: 20%;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card2title {
+  align-self: center;
+  margin-left: 15px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social img {
+  width: 1.3%;
+  height: auto;
+  margin-left: 5px;
 }

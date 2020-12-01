@@ -47,7 +47,6 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
-      <div></div>
     </div>
   );
 };
