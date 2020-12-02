@@ -1,0 +1,83 @@
+.welcomeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card h2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  leter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card {
+  background-color: #2c194e;
+  width: 300px;
+  cursor: pointer;
+  padding: 15px;
+
+  border: 3px solid #2196f3;
+  border-radius: 0.25rem;
+  box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #b83b71,
+    20px -20px 0 -3px #2c194e, 20px -20px #3ba3b8, 30px -30px 0 -3px #2c194e,
+    30px -30px #865ecc, 40px -40px 0 -3px #2c194e, 40px -40px #fff;
+}
+
+.card:hover {
+  animation: shadow-wave 1s ease infinite;
+}
+
+/*     
+blue - primary: #2196F3
+darker purple :#6035B2
+purple :#673AB7
+light purple -- orange: #865ECC
+white -- red: #fff
+teal --yellow: #3BA3B8
+pink-ish -- green: #B83B71
+very dark purple -- background: #2C194E
+*/
+
+@keyframes shadow-wave {
+  0% {
+    border: 3px solid #2196f3;
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #b83b71,
+      20px -20px 0 -3px #2c194e, 20px -20px #3ba3b8, 30px -30px 0 -3px #2c194e,
+      30px -30px #865ecc, 40px -40px 0 -3px #2c194e, 40px -40px #fff;
+  }
+  20% {
+    border: 3px solid #fff;
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #2196f3,
+      20px -20px 0 -3px #2c194e, 20px -20px #b83b71, 30px -30px 0 -3px #2c194e,
+      30px -30px #3ba3b8, 40px -40px 0 -3px #2c194e, 40px -40px #865ecc;
+  }
+  40% {
+    border: 3px solid #865ecc;
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #fff,
+      20px -20px 0 -3px #2c194e, 20px -20px #2196f3, 30px -30px 0 -3px #2c194e,
+      30px -30px #b83b71, 40px -40px 0 -3px #2c194e, 40px -40px #3ba3b8;
+  }
+  60% {
+    border: 3px solid var(#3ba3b8);
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #865ecc,
+      20px -20px 0 -3px #2c194e, 20px -20px #fff, 30px -30px 0 -3px #2c194e,
+      30px -30px #2196f3, 40px -40px 0 -3px #2c194e, 40px -40px #b83b71;
+  }
+  80% {
+    border: 3px solid #b83b71;
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #3ba3b8,
+      20px -20px 0 -3px #2c194e, 20px -20px #865ecc, 30px -30px 0 -3px #2c194e,
+      30px -30px #fff, 40px -40px 0 -3px #2c194e, 40px -40px #2196f3;
+  }
+  100% {
+    border: 3px solid #2196f3;
+    box-shadow: 10px -10px 0 -3px #2c194e, 10px -10px #b83b71,
+      20px -20px 0 -3px #2c194e, 20px -20px #3ba3b8, 30px -30px 0 -3px #2c194e,
+      30px -30px #865ecc, 40px -40px 0 -3px #2c194e, 40px -40px #fff;
+  }
+}
