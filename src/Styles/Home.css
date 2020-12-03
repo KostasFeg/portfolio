@@ -166,6 +166,7 @@ div h1:hover {
 
 .stack2cardcontent {
   display: flex;
+  justify-content: center;
   flex: 1 1 auto;
   padding: 1rem;
 }
@@ -197,4 +198,5 @@ div h1:hover {
   width: 1.3%;
   height: auto;
   margin-left: 5px;
+  margin-bottom: 10px;
 }
